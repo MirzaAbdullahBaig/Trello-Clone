@@ -16,21 +16,20 @@
 
     <main class="flex overflow-x-auto gap-5 p-5 items-start">
         <div class="card-js border-2 border-solid border-amber-600 p-2 rounded-md flex flex-col min-w-72 gap-3">
-            <h3 class="text-center text-3xl font-sans font-semibold">Card 01</h3>
-            <form>
-                <input class="w-full p-2 hover:bg-orange-100 focus:bg-orange-100" type="text" placeholder="add Task">
-            </form>
-        </div>
-        <div class="card-js border-2 border-solid border-amber-600 p-2 rounded-md flex flex-col min-w-72 gap-3">
-            <h3 class="text-center text-3xl font-sans font-semibold">Card 01</h3>
+            <h3 class="text-center text-3xl font-sans font-semibold p-1 mb-5 bg-amber-500 rounded-md text-white">Card 01</h3>
             <form>
                 <input class="w-full p-2 hover:bg-orange-100 focus:bg-orange-100" type="text" placeholder="add Task">
             </form>
         </div>
 
-        <button type="button"> 
-            <i class="material-icons">add</i>    
-        </button>
+        <span>
+            <input
+                class="text-lg placeholder-gray-900 placeholder-opacity-100 border-2 border-amber-600 border-solid rounded-md hover:bg-orange-100 focus:bg-orange-100 contrast-more:border-amber-600"
+                type="text" title="Enter card name" placeholder="+ Add Card">
+        </span>
+        
+        
+
     </main>
 
     <script src="./script.js"></script>
