@@ -10,7 +10,7 @@ const addTask = (e) => {
     const parentElement = form.parentElement; // Getting parent element || Getting div
     const ticket = createTicket(value);
 
-    if (!value) return; // check if user enters a null value
+    if (!value || value.trim() === '') return; // check if user enters a null value or Space
 
     parentElement.insertBefore(ticket, e.target);
 
@@ -55,7 +55,7 @@ const addCard = (e) => {
     e.preventDefault();
     
     const cardTitle = cardInput.value;
-    if (!cardTitle) return;
+    if (!cardTitle || cardTitle.trim() === '') return; // check if user enters a null value or Space
     
     const newCard = createCard(cardTitle);
 
